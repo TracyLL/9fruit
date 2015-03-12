@@ -1,0 +1,309 @@
+<html >
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="shortcut icon" href="http://www.suning.com/favicon.ico" type="image/x-icon"/>
+    <title>广告平台</title>
+    <meta name="keywords" content="广告平台"/>
+    <meta name="description" content="广告平台"/>
+    <link rel="stylesheet" type="text/css" href="css/fruit.css"/>
+    <link rel="stylesheet" type="text/css" href="css/index.css"/>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/fruit_head.js"></script>
+   
+    <script type="text/javascript" src="js/jquery_superslide.js"></script>
+
+    <script type="text/javascript">
+
+   
+
+    function autoScroll(obj) {
+        $(obj).find("ul:first").stop(true,true).animate({
+            marginTop: "-40px"
+        }, 500, function() {
+            $(this).css({ marginTop: "0px" }).children().slice(0,2).appendTo(this);
+        });
+    }
+
+    $(document).ready(function() {
+        if($(".notice-body li").length>1){
+            if($(".notice-body li").length==2 
+                    && $(".notice-body li a").eq(0).html().replace(/[^\x00-\xff]/g, "xx").length+($(".notice-body li").eq(0).find('img').length)*2<=35 
+                    && $(".notice-body li a").eq(1).html().replace(/[^\x00-\xff]/g, "xx").length+($(".notice-body li").eq(0).find('img').length)*2<=35 ){
+            }else{
+                var myar = setInterval('autoScroll(".notice-body")', 4000)
+                $(".notice-body").hover(function() { clearInterval(myar); }, function() { myar = setInterval('autoScroll(".notice-body")', 4000) }); //当鼠标放上去的时候，滚动停止，鼠标离开的时候滚动开始，-22px是行高
+            }
+        }
+    });
+
+    </script>
+    
+   
+</head>
+<body>
+<!-- topbar [[ -->
+<div class="g-topbar">
+    <div class="wrapper">
+        <span class="g-welcome">
+            <strong>34903840938@qq.com</strong>您好，欢迎来到鲜果9号！<a href="#">退出</a>
+        </span>
+        <div class="tool-link">
+           
+            <a href="#">注册</a><span class="separator">|</span> 
+          
+            <div class="web-nav">
+                <a href="#" class="web-nav-btn">我的鲜果<i class="iconfont">&#59;</i></a>
+                <div class="web-list">
+                    <a href="#">我的订单</a>
+                    <a href="#">我的订单</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- topbar ]] -->
+<!-- header [[ -->
+<div class="g-header">
+    <div class="wrapper clearfix">
+        <div class="logo-green">
+                    <h1><a href="/"><img src="http://cdn.fruitday.com/assets/images/logo/fdaylogo.png" alt="水果我们只挑有来头的-鲜果网购：脐橙、苹果、香梨、蓝莓、牛油果、柠檬"></a> </h1>
+        </div>
+        <div class="logo-adress"></div>
+        <div class="search-wrap">
+            <div class="search-panel">
+                <div class="input-wrap">
+                    <i class="sech"></i>
+                    <input id="search_keyword" type="text" value="奇异果" placeholder="想找什么水果" class="logo-search-input">
+                </div>
+                <div class="search-button">
+                    <button class="btn-search" id="search_button" type="button">Search</button>
+                </div>
+            </div>
+
+            <div class="search-ft">
+                <ul>
+                    <li>热点搜索：</li>
+                    <li><a href="/web/search/脐橙">脐橙</a></li><li><a href="/web/search/苹果">苹果</a></li><li><a href="/web/search/香梨">香梨</a></li><li><a href="/web/search/蓝莓">蓝莓</a></li><li><a href="/web/search/牛油果">牛油果</a></li><li><a href="/web/search/柠檬">柠檬</a></li>                    </ul>
+            </div>
+        </div>
+    </div> 
+    <div class="top-box02">
+        <div class="wrapper">
+            <div class="nav">
+                <div class="nav-all">
+                    <div class="nav-all-title">
+                        <a href="#">全部商品</a> <i></i>
+                    </div>
+                    <div class="nav-all-class statis_class" style="display: none;">
+                        <div>
+                            <ul>
+                                <li>
+                                    <a href="#">鲜果区</a>
+                                    </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <a href="#">营养套餐</a>
+                                    </li>
+                            </ul>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="nav-other" style="font-weight:600;">
+                    <ul>
+                        <li><a href="#">首页</a></li>
+                        <li><a href="#">鲜果区</a></li>
+                        <li><a href="#">礼品区</a></li>
+                        <li style="position:relative;"><a href="#">抢鲜啦!</a></li>
+                        <li><a href="#">试吃中心</a></li>
+                        <li><a href="#" target="">企业采购</a></li>
+                        <li><a href="#" target="">果食</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>  
+</div>
+<!-- header ]] -->
+<!--main [[-->
+
+<div class="box_body">
+    <div class="ads wrapper">
+        <div class="show-banner statis_index_rotation">
+            <div class="showpic-x">
+                <ul class="showpic-num" style="position: relative; width: 0px; height: 0px;">
+                    <li style="position: absolute; width: 0px; left: 0px; top: 0px; display: none;"><a href="http://subject.fruitday.com/sale/orange_2015/fruitdaywd.html" target="" position="0"><img src="http://cdn.fruitday.com/images/2015-03-09/1425882856_pic.jpg">
+                    </a></li>
+                    <li style="position: absolute; width: 0px; left: 0px; top: 0px; display: none;"><a href="http://subject.fruitday.com/sale/disney/fruitdaywd.html" target="" position="1"><img src="http://cdn.fruitday.com/images/2015-03-09/1425891448_pic.jpg">
+                    </a></li>
+                    <li style="position: absolute; width: 0px; left: 0px; top: 0px; display: list-item;"><a href="http://www.fruitday.com/web/pro/3631" target="" position="2"><img src="http://cdn.fruitday.com/images/2015-03-05/1425554809_pic.jpg">
+                    </a></li>
+                    <li style="position: absolute; width: 0px; left: 0px; top: 0px; display: none;"><a href="http://www.fruitday.com/web/pro/2428" target="" position="3"><img src="http://cdn.fruitday.com/images/2015-03-03/1425352351_pic.jpg">
+                    </a></li>
+                    <li style="position: absolute; width: 0px; left: 0px; top: 0px; display: none;"><a href="/web/pro/3554" target="" position="4"><img src="http://cdn.fruitday.com/images/2015-01-16/1421390188_pic.jpg">
+                    </a></li>
+                </ul>
+                <a class="prev" href="javascript:void(0)" style="opacity: 0.1; display: none;"></a>
+                <a class="next" href="javascript:void(0)" style="opacity: 0.1; display: none;"></a>
+                <div class="num">
+                    <ul><li class="">1</li><li class="">2</li><li class="on">3</li><li class="">4</li><li class="">5</li></ul>
+                </div>
+            </div>
+            <script>
+            /*鼠标移过，左右按钮显示*/
+            $(".showpic-x ").hover(function(){
+                $(this).find(".prev,.next").fadeTo("show",0.1);
+            },function(){
+                $(this).find(".prev,.next").hide();
+            })
+            /*鼠标移过某个按钮 高亮显示*/
+            $(".prev,.next").hover(function(){
+                $(this).fadeTo("show",0.7);
+            },function(){
+                $(this).fadeTo("show",0.1);
+            })
+            console.log($.fn.jquery);
+            $(".showpic-x ").slide({ titCell:".num ul" , mainCell:".showpic-num" , effect:"fold", autoPlay:true, delayTime:700 , autoPage:true ,interTime:3500});
+            </script>
+        </div>
+    
+    <div class="show-ad statis_index_middleactive">
+        <ul>
+                        <li style="margin-right:10px;">
+                <!--  -->
+                <a position="0" href="http://www.fruitday.com/web/pro/3680" target="">
+                <img title="红提" src="http://cdn.fruitday.com/images/2015-03-05/1425537863_pic.jpg"></a></li>
+                        <li style="margin-right:10px;">
+                <!--  class="show-right" -->
+                <a position="1" href="http://subject.fruitday.com/sale/orange_2015/fruitday.html" target="">
+                <img title="玫瑰香橙" src="http://cdn.fruitday.com/images/2015-03-09/1425883953_pic.jpg"></a></li>
+                        <li>
+                <!--  -->
+                <a position="2" href="http://www.fruitday.com/qiangxian/activeList" target="">
+                <img title="抢鲜啦！天天有新货！" src="http://cdn.fruitday.com/images/2015-03-09/1425866474_pic.jpg"></a></li>
+                    </ul>
+    </div>
+    </div>
+
+    <!--product list [[-->
+    <div class="list wrapper">
+        <div class="container onelist">
+            <div class="onelist-left">
+                <div class="onelist-cp01">
+                    <div class="onelist-cp01-title">
+                        <h3>优惠专区</h3>
+                        <h4>
+                            <a href="#">查看更多 &gt;</a>
+                        </h4>
+                    </div>
+                    <div class="onelist-cp01-box">
+                        <div class="onelist-pictu statis_index_listproduct">
+                            <ul>
+                                <li class="cplist-p01" style="position:relative;">
+                                    <a href="/web/pro/3526" target="" pid="3526" position="1001">
+                                        <img src="http://img3.fruitday.com/product_pic/3500/1/1-270x270-3500-U4B38253.jpg">
+                                    </a><div class="icon-red"></div>
+                                </li>
+                                <li class="cplist-p02"><a href="/web/pro/3526" target="" pid="3526" position="1001">
+                                    美国华盛顿甜脆红地厘蛇果            </a>
+                                </li>
+                                <li class="cplist-p03" style="float:none;">12个装</li>
+                                <li class="cplist-p04">
+                                    <span class="green01" style="float:left;">￥78</span>
+                                    <span class="gray01">￥99</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="onelist-pictu statis_index_listproduct">
+                            <ul>
+                                <li class="cplist-p01" style="position:relative;">
+                                    <a href="/web/pro/3554" target="" pid="3554" position="1002">
+                                        <img src="http://img1.fruitday.com/product_pic/3160/1/1-270x270-3160-CT2DBUX9.jpg">
+                                    </a><div class="icon-red"></div> 
+                                </li>
+                                <li class="cplist-p02"><a href="/web/pro/3554" target="" pid="3554" position="1002">
+                                    墨西哥牛油果          </a></li>
+                                <li class="cplist-p03" style="float:none;">9个装</li>
+                                <li class="cplist-p04">
+                                    <span class="green01" style="float:left;">￥69</span>
+                                    <span class="gray01">￥98</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="onelist-pictu statis_index_listproduct">
+                            <ul>
+                                <li class="cplist-p01" style="position:relative;">
+                                    <a href="/web/pro/2428" target="" pid="2428" position="1003">
+                                        <img src="http://img2.fruitday.com/product_pic/2428/1/1-270x270-2428-KABT6TFB.jpg">
+                                    </a>
+                                    <div class="icon-red"></div>
+                                </li>
+                                <li class="cplist-p02"><a href="/web/pro/2428" target="" pid="2428" position="1003">
+                                    智利蓝莓（买四送四）          </a></li>
+                                <li class="cplist-p03" style="float:none;">4盒装</li>
+                                <li class="cplist-p04"><span class="green01" style="float:left;">￥99</span>
+                                                </li>
+                            </ul>
+                        </div>
+                        <div class="onelist-pictu statis_index_listproduct" style="padding-right:0px;">
+                            <ul>
+                                <li class="cplist-p01" style="position:relative;">
+                                    <a href="/web/pro/3444" target="" pid="3444" position="1004">
+                                        <img src="http://img3.fruitday.com/product_pic/3444/1/1-270x270-3444-1AXHAP8C.jpg">
+                                    </a>
+                                <li class="cplist-p02"><a href="/web/pro/3444" target="" pid="3444" position="1004">
+                                    新奇士美国脐橙         </a></li>
+                                <li class="cplist-p03" style="float:none;">12个装</li>
+                                <li class="cplist-p04">
+                                    <span class="green01" style="float:left\0;">￥78</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="onelist-right">
+                <!--notice [[-->
+                <div class="notice">
+                    <div class="notice-title">
+                        <span class="notice-title-one">果园公告（以最新公告为准）</span>
+                        <span class="notice-title-two">
+                            <a href="#">更多 &gt;</a>
+                        </span>
+                    </div>
+                    <div class="notice-body">
+                        <ul style="margin-top: 0px;">
+                            <li><a href="http://www.fruitday.com/web/info/633" class="ad_link" target="">全仓充值1000元赠品调整</a></li>
+                            <li><a href="http://www.fruitday.com/web/info/631" class="ad_link" target="""">上海仓满赠产品切换公告</a></li>
+                            <li><a href="http://www.fruitday.com/web/info/630" class="ad_link" target="""">【重要通知】天天果园春节配送说明公告
+                            </a></li>
+                            <li><a href="http://www.fruitday.com/web/info/627" class="ad_link" target="""">除上海地区其他仓充值有礼赠品切换公告
+                            </a></li>
+                            <li><a href="http://www.fruitday.com/web/info/625" class="ad_link" target="""">天天果园春节发货公告</a></li>
+                            <li><a href="http://www.fruitday.com/web/info/622" class="ad_link" target="">全场满300赠品切换公告</a></li>
+                            <li><a href="http://www.fruitday.com/web/info/621" class="ad_link" target="">深圳仓、杭州仓全场满赠切换公告</a>
+                            </li>
+                            <li><a href="http://www.fruitday.com/web/info/620" class="ad_link" target="">上海地区充值满1000元赠品调整</a></li><li><a href="http://www.fruitday.com/web/info/618" class="ad_link" target="">全国仓赠品切换公告</a></li>
+                            <li><a href="http://www.fruitday.com/web/info/616" class="ad_link" target="">全国仓赠品切换公告</a></li>
+                            <li><a href="http://www.fruitday.com/web/info/614" class="ad_link" target="">全仓充值1000元赠品调整</a></li>
+                            <li><a href="http://www.fruitday.com/web/info/613" class="ad_link" target="">深圳仓樱桃延迟发货通知</a></li><li><a href="http://www.fruitday.com/web/info/612" class="ad_link" target="">关于不法分子冒充天天果园名义的公告</a></li>
+                        </ul> 
+                    </div>
+                </div>
+                <!--notice ]]-->
+                <!--specail list [[-->
+                
+                <!--special list]]-->
+
+            </div>
+        </div>
+    </div>
+
+
+    <!--product list ]]-->
+</div>
+<!--main ]]-->
+
+</body>
+</html>
